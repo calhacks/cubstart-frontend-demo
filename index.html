@@ -1,0 +1,53 @@
+<!doctype html>
+
+<!-- this is an HTML document!
+  It represents a webpage. -->
+<html>
+
+  <!-- this is the HEAD of this page
+    It contains some metadata about the page.
+    Nothing in the HEAD is visible on the webpage. -->
+  <head>
+    <!-- this is the TITLE of the page, which shows up
+      in the tab in the browser -->
+    <title>Tip Calculator 3000</title>
+    <!-- this is a LINK to a CSS file.
+      the LINK tag tells the browser where to look for
+      other things related to this page, like a CSS file.
+
+      A CSS file tells the browser how to "style" the HTML,
+      aka what the tags should look like. -->
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+
+  <!-- this is the BODY of this page.
+    This part contains everything that shows up on the page. -->
+  <body>
+    <div id="menubar">
+      <h1>Tip Calculator 3000</h1>
+      <!-- this is an A tag, which is a hyperlink!
+        the "href" attribute on this tag tells you where
+        the link leads. -->
+      <a href="about.html">About This App</a>
+    </div>
+
+
+    <!-- DIV tags group other tags into a hierarchy -->
+    <div class="inputBox">
+      <label for="price">Price</label>
+      <input id="price" type="number" min="0"/>
+    </div>
+    <div class="inputBox">
+      <label for="percent">Percent</label>
+      <input id="percent" type="number" min="1" max="50"/>
+    </div>
+
+    <button id="submit">Calculate Tip</button>
+
+    <!-- this is a SCRIPT. It contains any
+     programs that need to run on this page, and is written
+     in JavaScript. -->
+    <script src="script.js"></script>
+  </body>
+
+</html>

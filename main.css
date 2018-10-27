@@ -1,0 +1,64 @@
+body {
+    font-family: 'San Francisco', 'Segoe UI', 'Arial', sans-serif;
+    text-align: center;
+}
+
+#menubar {
+    /* These four lines align the header
+     *  and the "about" link on the same line. */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* These two lines add some "padding" (empty space)
+     *  to the left and right of the menubar */
+    padding-left: 16%;
+    padding-right: 16%;
+}
+
+.inputBox {
+  /* These four lines align the LABEL and INPUT
+   *  boxes on the same horizontal line.
+   *
+   * Don't worry too much about understanding what
+   *  these lines do today. */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    padding-left: 16%;
+    padding-right: 16%;
+}
+
+label, input, button {
+    font-size: 24px;
+}
+
+input {
+    min-width: 100px;
+    border: 2px solid grey;
+}
+
+button {
+    background: grey;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 16px;
+
+    /* "color" by itself stands for the text color */
+    color: #fff;
+    box-shadow: 0 2px 6px -1px rgba(0, 0, 0, .4);
+}
+
+/* The ":hover" selector only applies styles when
+ *  you're hovering the mouse over the element */
+button:hover {
+    opacity: .7;
+}
+
