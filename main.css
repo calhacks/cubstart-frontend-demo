@@ -1,11 +1,25 @@
 body {
     font-family: 'San Francisco', 'Segoe UI', 'Arial', sans-serif;
+    /* The text-align property tells the browser to
+     *
+     *        align the text
+     *         in the box
+     *          like this
+     *
+     * instead of
+     * like this, aligned
+     * to the left, which is the default.
+     *
+     */
     text-align: center;
 }
 
 #menubar {
     /* These four lines align the header
-     *  and the "about" link on the same line. */
+     *  and the "about" link on the same line.
+     *
+     *  Read more about flex-box CSS styles
+     *  at https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,8 +53,14 @@ label, input, button {
 }
 
 input {
+    /* min-width sets the minimum allowed size
+     * for this element. No matter how small or big
+     * the rest of the page was resized, the input
+     * box is guaranteed at least 100px width */
     min-width: 100px;
-    border: 2px solid grey;
+    border-width: 2px;
+    border-style: solid;
+    border-color: grey;
 }
 
 button {
